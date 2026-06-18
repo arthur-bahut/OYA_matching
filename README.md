@@ -17,6 +17,8 @@ OYA Matching est une application web mobile-first, inspirée des applications de
 2. **Profil** — Informations complémentaires : métier actuel, expérience, disponibilités, atouts personnels
 3. **Résultats** — Top 3 des domaines qui matchent, liste de métiers associés, synthèse personnalisée et export PDF
 
+Aucune IAG présente dans l'application.
+
 ---
 
 ## Stack technique
