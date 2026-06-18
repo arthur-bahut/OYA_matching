@@ -1,0 +1,182 @@
+[
+  {
+    "badge": "🌱 Rapport au vivant",
+    "badgeColor": "#E8F5E9",
+    "badgeText": "#2B6B2E",
+    "statement": "Mettre les mains dans la terre, comprendre les cycles naturels, produire de la fourche à la fourchette : c'est ce qui me nourrit vraiment.",
+    "image": "images_swipe/rapport_au_vivant.png",
+    "tags": ["Maraîchage", "Agriculture urbaine", "Agroforesterie"],
+    "scores": { "Production agricole": 3, "Économie circulaire & environnement": 1 }
+  },
+  {
+    "badge": "⚗️ Créer & transformer",
+    "badgeColor": "#FDE8D0",
+    "badgeText": "#7A4500",
+    "statement": "Transformer des matières premières en produits artisanaux de qualité : c'est un art que je veux maîtriser.",
+    "image": "images_swipe/creer_et_transformer.png",
+    "tags": ["Fromagerie", "Boulangerie", "Conserverie"],
+    "scores": { "Transformation agroalimentaire & industries": 3, "Restauration & métiers de bouche": 1, "Production agricole": 1 }
+  },
+  {
+    "badge": "🔄 Circuits & logistique",
+    "badgeColor": "#E4E8EC",
+    "badgeText": "#2B3A47",
+    "statement": "Connecter producteurs et consommateurs, organiser des circuits courts, relier les territoires : c'est mon moteur.",
+    "image": "images_swipe/circuit_et_logistique.png",
+    "tags": ["AMAP", "Drive fermier", "Épicerie solidaire"],
+    "scores": { "Logistique, distribution & circuits courts": 3, "Gouvernance, politiques publiques & transition": 1 }
+  },
+  {
+    "badge": "🍳 Cuisine & accueil",
+    "badgeColor": "#FBECE8",
+    "badgeText": "#7A2009",
+    "statement": "Cuisiner, servir, accueillir autour d'un repas : les métiers de la table et de la cuisine sont faits pour moi.",
+    "image": "images_swipe/cuisine_et_accueil.png",
+    "tags": ["Cuisine durable", "Restauration collective", "Traiteur bio"],
+    "scores": { "Restauration & métiers de bouche": 3, "Transformation agroalimentaire & industries": 1 }
+  },
+  {
+    "badge": "🥗 Santé & nutrition",
+    "badgeColor": "#E0F0EA",
+    "badgeText": "#235448",
+    "statement": "Conseiller, sensibiliser, éduquer à mieux manger : j'aime faire le lien entre alimentation et santé.",
+    "image": "images_swipe/sante_et_nutrition.png",
+    "tags": ["Diététique", "Éducation alimentaire", "Prévention"],
+    "scores": { "Nutrition, santé & consommation": 3, "Transversale": 1 }
+  },
+  {
+    "badge": "♻️ Impact & ressources",
+    "badgeColor": "#F4FBE0",
+    "badgeText": "#5A7A1E",
+    "statement": "Réduire le gaspillage, préserver les ressources, penser le système alimentaire en boucle fermée : ça me mobilise profondément.",
+    "image": "images_swipe/impact_et_ressources.png",
+    "tags": ["Anti-gaspillage", "Économie circulaire", "Emballages biosourcés"],
+    "scores": { "Économie circulaire & environnement": 3, "Gouvernance, politiques publiques & transition": 1, "Transformation agroalimentaire & industries": 1 }
+  },
+  {
+    "badge": "🏛️ Gouvernance & vision",
+    "badgeColor": "#FFF8E7",
+    "badgeText": "#7A5800",
+    "statement": "Concerter des acteurs, défendre une vision politique, impulser le changement systémique : je souhaite agir à l'échelle de tout un territoire.",
+    "image": "images_swipe/gouvernance_et_vision.png",
+    "tags": ["PAT", "Politique alimentaire", "Plaidoyer"],
+    "scores": { "Gouvernance, politiques publiques & transition": 3, "Transversale": 2 }
+  },
+  {
+    "badge": "💡 Transmission",
+    "badgeColor": "#FDE8E6",
+    "badgeText": "#8A3930",
+    "statement": "Former, animer, accompagner des porteurs de projet en transition alimentaire : c'est là que j'ai le plus d'impact.",
+    "image": "images_swipe/transmission.png",
+    "tags": ["Formation pro", "Coaching", "Animation de réseau"],
+    "scores": { "Transversale": 3, "Gouvernance, politiques publiques & transition": 1, "Nutrition, santé & consommation": 1 }
+  },
+  {
+    "badge": "🏪 Commerce local",
+    "badgeColor": "#E4E8EC",
+    "badgeText": "#2B3A47",
+    "statement": "Vendre ou animer un marché de producteurs, créer du lien entre la ferme et les consommateurs : je veux contribuer à un système alimentaire plus juste.",
+    "image": "images_swipe/commerce_local.png",
+    "tags": ["Marché fermier", "Drive fermier", "Coopérative conso"],
+    "scores": { "Logistique, distribution & circuits courts": 3, "Production agricole": 1 }
+  },
+  {
+    "badge": "🏷️ Qualité & process",
+    "badgeColor": "#FDE8D0",
+    "badgeText": "#7A4500",
+    "statement": "Garantir la qualité, la sécurité alimentaire et la traçabilité à chaque étape : la rigueur des process industriels et artisanaux est mon terrain d'excellence.",
+    "image": "images_swipe/qualite_et_process.png",
+    "tags": ["HACCP", "Certification bio", "Traçabilité"],
+    "scores": { "Transformation agroalimentaire & industries": 3, "Production agricole": 1, "Logistique, distribution & circuits courts": 1 }
+  },
+  {
+    "badge": "🫕 Gastronomie & culture",
+    "badgeColor": "#FBECE8",
+    "badgeText": "#7A2009",
+    "statement": "Valoriser les savoir-faire culinaires locaux, défendre un patrimoine gastronomique durable, faire de la table un acte culturel et militant : c'est ma vocation.",
+    "image": "images_swipe/gastronomie_et_culture.png",
+    "tags": ["Cuisine du terroir", "Gastronomie engagée", "Chefs militants"],
+    "scores": { "Restauration & métiers de bouche": 3, "Transformation agroalimentaire & industries": 1 }
+  },
+  {
+    "badge": "🩺 Prévention & santé",
+    "badgeColor": "#E0F0EA",
+    "badgeText": "#235448",
+    "statement": "Collaborer avec des soignants, collectivités et entreprises pour transformer les habitudes alimentaires : la prévention est un levier que je veux actionner.",
+    "image": "images_swipe/prevention_et_sante.png",
+    "tags": ["Santé publique", "Alimentation thérapeutique", "Prévention"],
+    "scores": { "Nutrition, santé & consommation": 3, "Transversale": 1 }
+  },
+  {
+    "badge": "🚀 Porteur de projet",
+    "badgeColor": "#FFF3E0",
+    "badgeText": "#7A4500",
+    "statement": "Monter ma propre ferme, mon épicerie coopérative ou mon atelier de transformation : l'entrepreneuriat est ma façon de transformer le système.",
+    "image": "images_swipe/porteur_de_projet.png",
+    "tags": ["Installation agricole", "Coopérative", "Startup food"],
+    "scores": { "Production agricole": 2, "Transversale": 2, "Transformation agroalimentaire & industries": 1, "Logistique, distribution & circuits courts": 1 }
+  },
+  {
+    "badge": "💻 Data & systèmes",
+    "badgeColor": "#E8EAF6",
+    "badgeText": "#1A237E",
+    "statement": "Modéliser l'empreinte carbone d'une chaîne alimentaire, piloter un tableau de bord ESG, analyser des données agricoles : j'ai la fibre numérique responsable.",
+    "image": "images_swipe/data_et_systemes.png",
+    "tags": ["ACV", "Data agri", "Reporting ESG"],
+    "scores": { "Gouvernance, politiques publiques & transition": 2, "Économie circulaire & environnement": 2, "Transformation agroalimentaire & industries": 1 }
+  },
+  {
+    "badge": "🐄 Élevage & filières animales",
+    "badgeColor": "#E8F5E9",
+    "badgeText": "#1B5E20",
+    "statement": "Gérer un troupeau en plein air, valoriser lait ou viande dans des filières éthiques et durables : l'élevage responsable me tient profondément à coeur.",
+    "image": "images_swipe/elevage_et_filieres_animales.png",
+    "tags": ["Élevage bovin", "Fromage fermier", "Agriculture régénérative"],
+    "scores": { "Production agricole": 3, "Transformation agroalimentaire & industries": 1 }
+  },
+  {
+    "badge": "🌾 Semences & biodiversité",
+    "badgeColor": "#FFFDE7",
+    "badgeText": "#827717",
+    "statement": "Sélectionner des variétés anciennes, conserver leur patrimoine génétique, contribuer à l'indépendance paysanne : c'est un combat que je veux mener.",
+    "image": "images_swipe/semences_et_biodiversite.png",
+    "tags": ["Semences paysannes", "Biodiversité", "Agriculture bio"],
+    "scores": { "Production agricole": 3, "Gouvernance, politiques publiques & transition": 1, "Économie circulaire & environnement": 1 }
+  },
+  {
+    "badge": "🍽️ Cuisine collective",
+    "badgeColor": "#FBE9E7",
+    "badgeText": "#7A2009",
+    "statement": "Nourrir 500 personnes par jour en atteignant 50 % de bio et local, réduire le gaspillage alimentaire de 30 % : la restauration collective responsable m'attire.",
+    "image": "images_swipe/cuisine_collective.png",
+    "tags": ["Cantine scolaire", "EHPAD bio", "Self municipal"],
+    "scores": { "Restauration & métiers de bouche": 3, "Logistique, distribution & circuits courts": 1, "Gouvernance, politiques publiques & transition": 1 }
+  },
+  {
+    "badge": "🤝 Coopération & ESS",
+    "badgeColor": "#F3E5F5",
+    "badgeText": "#4A148C",
+    "statement": "Co-construire un projet avec des agriculteurs, des distributeurs et des habitants, rapprocher et faire se concerter chaque maillon de la chaîne : le modèle coopératif est le mien.",
+    "image": "images_swipe/cooperation_et_ess.png",
+    "tags": ["SCIC / SCOP", "Coopérative agricole", "Épicerie solidaire"],
+    "scores": { "Gouvernance, politiques publiques & transition": 3, "Transversale": 2, "Logistique, distribution & circuits courts": 1 }
+  },
+  {
+    "badge": "🔬 R&D & innovation",
+    "badgeColor": "#E1F5FE",
+    "badgeText": "#01579B",
+    "statement": "Tester de nouveaux procédés, développer des substituts végétaux, prototyper des emballages biosourcés : l'innovation est ma contribution à la transition alimentaire.",
+    "image": "images_swipe/rd_et_innovation.png",
+    "tags": ["R&D agroalimentaire", "Food tech", "Biomatériaux"],
+    "scores": { "Transformation agroalimentaire & industries": 3, "Économie circulaire & environnement": 1, "Gouvernance, politiques publiques & transition": 1 }
+  },
+  {
+    "badge": "📢 Communiquer & sensibiliser",
+    "badgeColor": "#FCE4EC",
+    "badgeText": "#880E4F",
+    "statement": "Écrire et produire du contenu pour valoriser des producteurs locaux et sensibiliser aux enjeux alimentaires : la communication est un acte militant.",
+    "image": "images_swipe/communiquer_et_sensibiliser.png",
+    "tags": ["Journalisme alimentaire", "Réseaux sociaux", "Brand content"],
+    "scores": { "Transversale": 3, "Nutrition, santé & consommation": 1, "Gouvernance, politiques publiques & transition": 1 }
+  }
+]

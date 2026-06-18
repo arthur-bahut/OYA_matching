@@ -1,0 +1,644 @@
+{
+  "_meta": {
+    "description": "Matrice de matching Oya v1.0 — moteur de scoring du diagnostic d'orientation métiers",
+    "version": "1.0",
+    "date": "Avril 2026",
+    "scoring_formula": "Score(bloc) = (T1_norm[0-5] * 2.0) + (T2_norm[0-5] * 1.0) + (T3 * 0.75)",
+    "ponderation": {
+      "T1_affinites": 2.0,
+      "T2_rome": 1.0,
+      "T3_contraintes": 0.75
+    },
+    "axes": {
+      "blocs_oya": [
+        "Production agricole",
+        "Transformation agroalimentaire & industries",
+        "Logistique, distribution & circuits courts",
+        "Restauration & métiers de bouche",
+        "Nutrition, santé & consommation",
+        "Économie circulaire & environnement",
+        "Gouvernance, politiques publiques & transition",
+        "Transversale"
+      ],
+      "familles_competences_oya": [
+        "Diagnostic systémique du système alimentaire",
+        "Conception de stratégies de transition alimentaire",
+        "Pilotage de projets de transition alimentaire",
+        "Mise en œuvre de solutions opérationnelles",
+        "Analyse de la performance et amélioration continue",
+        "Animation, formation et accompagnement des acteurs",
+        "Coordination territoriale et concertation",
+        "Veille, innovation et prospective"
+      ],
+      "familles_rome": {
+        "A": "A – Agriculture, pêche, espaces naturels",
+        "B": "B – Arts et façonnage d'ouvrages d'art",
+        "C": "C – Banque, assurance, immobilier",
+        "D": "D – Commerce, vente, tourisme",
+        "E": "E – Communication, médias, édition",
+        "F": "F – Construction, bâtiment, travaux publics",
+        "G": "G – Hôtellerie, restauration, tourisme, loisirs",
+        "H": "H – Industrie, production, maintenance",
+        "I": "I – Installation, maintenance, sécurité",
+        "J": "J – Santé",
+        "K": "K – Services à la personne, protection",
+        "L": "L – Spectacle",
+        "M": "M – Gestion, administration, conseil",
+        "N": "N – Transport, logistique",
+        "P": "P – Enseignement, formation",
+        "Q": "Q – Ressources humaines, juridique, finance",
+        "R": "R – Sport, animation",
+        "T": "T – Immobilier, nettoyage, services aux entreprises",
+        "U": "U – Sciences, recherche",
+        "V": "V – Accompagnement social, humanitaire"
+      }
+    }
+  },
+  "T1_bloc_x_competences": {
+    "_description": "Importance de chaque famille de compétences pour chaque bloc métier Oya. Score 0 (non pertinent) à 5 (compétence cœur de métier).",
+    "_colonnes": [
+      "Diagnostic systémique du système alimentaire",
+      "Conception de stratégies de transition alimentaire",
+      "Pilotage de projets de transition alimentaire",
+      "Mise en œuvre de solutions opérationnelles",
+      "Analyse de la performance et amélioration continue",
+      "Animation, formation et accompagnement des acteurs",
+      "Coordination territoriale et concertation",
+      "Veille, innovation et prospective"
+    ],
+    "scores": {
+      "Production agricole": {
+        "Diagnostic systémique du système alimentaire": 4,
+        "Conception de stratégies de transition alimentaire": 2,
+        "Pilotage de projets de transition alimentaire": 2,
+        "Mise en œuvre de solutions opérationnelles": 5,
+        "Analyse de la performance et amélioration continue": 3,
+        "Animation, formation et accompagnement des acteurs": 1,
+        "Coordination territoriale et concertation": 1,
+        "Veille, innovation et prospective": 3
+      },
+      "Transformation agroalimentaire & industries": {
+        "Diagnostic systémique du système alimentaire": 3,
+        "Conception de stratégies de transition alimentaire": 2,
+        "Pilotage de projets de transition alimentaire": 2,
+        "Mise en œuvre de solutions opérationnelles": 5,
+        "Analyse de la performance et amélioration continue": 4,
+        "Animation, formation et accompagnement des acteurs": 1,
+        "Coordination territoriale et concertation": 1,
+        "Veille, innovation et prospective": 3
+      },
+      "Logistique, distribution & circuits courts": {
+        "Diagnostic systémique du système alimentaire": 2,
+        "Conception de stratégies de transition alimentaire": 2,
+        "Pilotage de projets de transition alimentaire": 4,
+        "Mise en œuvre de solutions opérationnelles": 4,
+        "Analyse de la performance et amélioration continue": 3,
+        "Animation, formation et accompagnement des acteurs": 1,
+        "Coordination territoriale et concertation": 2,
+        "Veille, innovation et prospective": 2
+      },
+      "Restauration & métiers de bouche": {
+        "Diagnostic systémique du système alimentaire": 2,
+        "Conception de stratégies de transition alimentaire": 1,
+        "Pilotage de projets de transition alimentaire": 2,
+        "Mise en œuvre de solutions opérationnelles": 5,
+        "Analyse de la performance et amélioration continue": 3,
+        "Animation, formation et accompagnement des acteurs": 2,
+        "Coordination territoriale et concertation": 1,
+        "Veille, innovation et prospective": 2
+      },
+      "Nutrition, santé & consommation": {
+        "Diagnostic systémique du système alimentaire": 3,
+        "Conception de stratégies de transition alimentaire": 2,
+        "Pilotage de projets de transition alimentaire": 2,
+        "Mise en œuvre de solutions opérationnelles": 3,
+        "Analyse de la performance et amélioration continue": 4,
+        "Animation, formation et accompagnement des acteurs": 4,
+        "Coordination territoriale et concertation": 2,
+        "Veille, innovation et prospective": 3
+      },
+      "Économie circulaire & environnement": {
+        "Diagnostic systémique du système alimentaire": 4,
+        "Conception de stratégies de transition alimentaire": 3,
+        "Pilotage de projets de transition alimentaire": 3,
+        "Mise en œuvre de solutions opérationnelles": 4,
+        "Analyse de la performance et amélioration continue": 4,
+        "Animation, formation et accompagnement des acteurs": 2,
+        "Coordination territoriale et concertation": 3,
+        "Veille, innovation et prospective": 4
+      },
+      "Gouvernance, politiques publiques & transition": {
+        "Diagnostic systémique du système alimentaire": 4,
+        "Conception de stratégies de transition alimentaire": 5,
+        "Pilotage de projets de transition alimentaire": 5,
+        "Mise en œuvre de solutions opérationnelles": 2,
+        "Analyse de la performance et amélioration continue": 3,
+        "Animation, formation et accompagnement des acteurs": 3,
+        "Coordination territoriale et concertation": 5,
+        "Veille, innovation et prospective": 4
+      },
+      "Transversale": {
+        "Diagnostic systémique du système alimentaire": 4,
+        "Conception de stratégies de transition alimentaire": 4,
+        "Pilotage de projets de transition alimentaire": 4,
+        "Mise en œuvre de solutions opérationnelles": 3,
+        "Analyse de la performance et amélioration continue": 3,
+        "Animation, formation et accompagnement des acteurs": 5,
+        "Coordination territoriale et concertation": 4,
+        "Veille, innovation et prospective": 4
+      }
+    }
+  },
+  "T2_rome_x_competences": {
+    "_description": "Potentiel de transfert des compétences d'une grande famille ROME vers les familles de compétences Oya. Score 0 (pas de transfert) à 5 (transfert direct et fort).",
+    "_colonnes": [
+      "Diagnostic systémique du système alimentaire",
+      "Conception de stratégies de transition alimentaire",
+      "Pilotage de projets de transition alimentaire",
+      "Mise en œuvre de solutions opérationnelles",
+      "Analyse de la performance et amélioration continue",
+      "Animation, formation et accompagnement des acteurs",
+      "Coordination territoriale et concertation",
+      "Veille, innovation et prospective"
+    ],
+    "familles_rome": {
+      "A": "A – Agriculture, pêche, espaces naturels",
+      "B": "B – Arts et façonnage d'ouvrages d'art",
+      "C": "C – Banque, assurance, immobilier",
+      "D": "D – Commerce, vente, tourisme",
+      "E": "E – Communication, médias, édition",
+      "F": "F – Construction, bâtiment, travaux publics",
+      "G": "G – Hôtellerie, restauration, tourisme, loisirs",
+      "H": "H – Industrie, production, maintenance",
+      "I": "I – Installation, maintenance, sécurité",
+      "J": "J – Santé",
+      "K": "K – Services à la personne, protection",
+      "L": "L – Spectacle",
+      "M": "M – Gestion, administration, conseil",
+      "N": "N – Transport, logistique",
+      "P": "P – Enseignement, formation",
+      "Q": "Q – Ressources humaines, juridique, finance",
+      "R": "R – Sport, animation",
+      "T": "T – Immobilier, nettoyage, services aux entreprises",
+      "U": "U – Sciences, recherche",
+      "V": "V – Accompagnement social, humanitaire"
+    },
+    "scores": {
+      "A": {
+        "_libelle": "A – Agriculture, pêche, espaces naturels",
+        "Diagnostic systémique du système alimentaire": 5,
+        "Conception de stratégies de transition alimentaire": 3,
+        "Pilotage de projets de transition alimentaire": 3,
+        "Mise en œuvre de solutions opérationnelles": 5,
+        "Analyse de la performance et amélioration continue": 4,
+        "Animation, formation et accompagnement des acteurs": 2,
+        "Coordination territoriale et concertation": 2,
+        "Veille, innovation et prospective": 4
+      },
+      "B": {
+        "_libelle": "B – Arts et façonnage d'ouvrages d'art",
+        "Diagnostic systémique du système alimentaire": 1,
+        "Conception de stratégies de transition alimentaire": 1,
+        "Pilotage de projets de transition alimentaire": 1,
+        "Mise en œuvre de solutions opérationnelles": 4,
+        "Analyse de la performance et amélioration continue": 2,
+        "Animation, formation et accompagnement des acteurs": 1,
+        "Coordination territoriale et concertation": 1,
+        "Veille, innovation et prospective": 2
+      },
+      "C": {
+        "_libelle": "C – Banque, assurance, immobilier",
+        "Diagnostic systémique du système alimentaire": 1,
+        "Conception de stratégies de transition alimentaire": 2,
+        "Pilotage de projets de transition alimentaire": 3,
+        "Mise en œuvre de solutions opérationnelles": 1,
+        "Analyse de la performance et amélioration continue": 4,
+        "Animation, formation et accompagnement des acteurs": 1,
+        "Coordination territoriale et concertation": 1,
+        "Veille, innovation et prospective": 2
+      },
+      "D": {
+        "_libelle": "D – Commerce, vente, tourisme",
+        "Diagnostic systémique du système alimentaire": 2,
+        "Conception de stratégies de transition alimentaire": 2,
+        "Pilotage de projets de transition alimentaire": 3,
+        "Mise en œuvre de solutions opérationnelles": 3,
+        "Analyse de la performance et amélioration continue": 2,
+        "Animation, formation et accompagnement des acteurs": 3,
+        "Coordination territoriale et concertation": 2,
+        "Veille, innovation et prospective": 2
+      },
+      "E": {
+        "_libelle": "E – Communication, médias, édition",
+        "Diagnostic systémique du système alimentaire": 2,
+        "Conception de stratégies de transition alimentaire": 3,
+        "Pilotage de projets de transition alimentaire": 3,
+        "Mise en œuvre de solutions opérationnelles": 1,
+        "Analyse de la performance et amélioration continue": 2,
+        "Animation, formation et accompagnement des acteurs": 4,
+        "Coordination territoriale et concertation": 3,
+        "Veille, innovation et prospective": 3
+      },
+      "F": {
+        "_libelle": "F – Construction, bâtiment, travaux publics",
+        "Diagnostic systémique du système alimentaire": 2,
+        "Conception de stratégies de transition alimentaire": 1,
+        "Pilotage de projets de transition alimentaire": 3,
+        "Mise en œuvre de solutions opérationnelles": 4,
+        "Analyse de la performance et amélioration continue": 3,
+        "Animation, formation et accompagnement des acteurs": 1,
+        "Coordination territoriale et concertation": 2,
+        "Veille, innovation et prospective": 2
+      },
+      "G": {
+        "_libelle": "G – Hôtellerie, restauration, tourisme, loisirs",
+        "Diagnostic systémique du système alimentaire": 3,
+        "Conception de stratégies de transition alimentaire": 2,
+        "Pilotage de projets de transition alimentaire": 2,
+        "Mise en œuvre de solutions opérationnelles": 5,
+        "Analyse de la performance et amélioration continue": 3,
+        "Animation, formation et accompagnement des acteurs": 3,
+        "Coordination territoriale et concertation": 2,
+        "Veille, innovation et prospective": 2
+      },
+      "H": {
+        "_libelle": "H – Industrie, production, maintenance",
+        "Diagnostic systémique du système alimentaire": 2,
+        "Conception de stratégies de transition alimentaire": 2,
+        "Pilotage de projets de transition alimentaire": 3,
+        "Mise en œuvre de solutions opérationnelles": 5,
+        "Analyse de la performance et amélioration continue": 4,
+        "Animation, formation et accompagnement des acteurs": 1,
+        "Coordination territoriale et concertation": 1,
+        "Veille, innovation et prospective": 3
+      },
+      "I": {
+        "_libelle": "I – Installation, maintenance, sécurité",
+        "Diagnostic systémique du système alimentaire": 2,
+        "Conception de stratégies de transition alimentaire": 1,
+        "Pilotage de projets de transition alimentaire": 3,
+        "Mise en œuvre de solutions opérationnelles": 4,
+        "Analyse de la performance et amélioration continue": 3,
+        "Animation, formation et accompagnement des acteurs": 1,
+        "Coordination territoriale et concertation": 1,
+        "Veille, innovation et prospective": 2
+      },
+      "J": {
+        "_libelle": "J – Santé",
+        "Diagnostic systémique du système alimentaire": 3,
+        "Conception de stratégies de transition alimentaire": 2,
+        "Pilotage de projets de transition alimentaire": 3,
+        "Mise en œuvre de solutions opérationnelles": 3,
+        "Analyse de la performance et amélioration continue": 4,
+        "Animation, formation et accompagnement des acteurs": 4,
+        "Coordination territoriale et concertation": 2,
+        "Veille, innovation et prospective": 3
+      },
+      "K": {
+        "_libelle": "K – Services à la personne, protection",
+        "Diagnostic systémique du système alimentaire": 3,
+        "Conception de stratégies de transition alimentaire": 2,
+        "Pilotage de projets de transition alimentaire": 3,
+        "Mise en œuvre de solutions opérationnelles": 2,
+        "Analyse de la performance et amélioration continue": 2,
+        "Animation, formation et accompagnement des acteurs": 5,
+        "Coordination territoriale et concertation": 4,
+        "Veille, innovation et prospective": 2
+      },
+      "L": {
+        "_libelle": "L – Spectacle",
+        "Diagnostic systémique du système alimentaire": 1,
+        "Conception de stratégies de transition alimentaire": 1,
+        "Pilotage de projets de transition alimentaire": 2,
+        "Mise en œuvre de solutions opérationnelles": 2,
+        "Analyse de la performance et amélioration continue": 1,
+        "Animation, formation et accompagnement des acteurs": 3,
+        "Coordination territoriale et concertation": 2,
+        "Veille, innovation et prospective": 2
+      },
+      "M": {
+        "_libelle": "M – Gestion, administration, conseil",
+        "Diagnostic systémique du système alimentaire": 3,
+        "Conception de stratégies de transition alimentaire": 4,
+        "Pilotage de projets de transition alimentaire": 5,
+        "Mise en œuvre de solutions opérationnelles": 2,
+        "Analyse de la performance et amélioration continue": 5,
+        "Animation, formation et accompagnement des acteurs": 2,
+        "Coordination territoriale et concertation": 3,
+        "Veille, innovation et prospective": 3
+      },
+      "N": {
+        "_libelle": "N – Transport, logistique",
+        "Diagnostic systémique du système alimentaire": 2,
+        "Conception de stratégies de transition alimentaire": 2,
+        "Pilotage de projets de transition alimentaire": 4,
+        "Mise en œuvre de solutions opérationnelles": 4,
+        "Analyse de la performance et amélioration continue": 3,
+        "Animation, formation et accompagnement des acteurs": 1,
+        "Coordination territoriale et concertation": 2,
+        "Veille, innovation et prospective": 2
+      },
+      "P": {
+        "_libelle": "P – Enseignement, formation",
+        "Diagnostic systémique du système alimentaire": 3,
+        "Conception de stratégies de transition alimentaire": 3,
+        "Pilotage de projets de transition alimentaire": 3,
+        "Mise en œuvre de solutions opérationnelles": 2,
+        "Analyse de la performance et amélioration continue": 3,
+        "Animation, formation et accompagnement des acteurs": 5,
+        "Coordination territoriale et concertation": 4,
+        "Veille, innovation et prospective": 3
+      },
+      "Q": {
+        "_libelle": "Q – Ressources humaines, juridique, finance",
+        "Diagnostic systémique du système alimentaire": 2,
+        "Conception de stratégies de transition alimentaire": 3,
+        "Pilotage de projets de transition alimentaire": 4,
+        "Mise en œuvre de solutions opérationnelles": 1,
+        "Analyse de la performance et amélioration continue": 5,
+        "Animation, formation et accompagnement des acteurs": 2,
+        "Coordination territoriale et concertation": 3,
+        "Veille, innovation et prospective": 2
+      },
+      "R": {
+        "_libelle": "R – Sport, animation",
+        "Diagnostic systémique du système alimentaire": 3,
+        "Conception de stratégies de transition alimentaire": 2,
+        "Pilotage de projets de transition alimentaire": 3,
+        "Mise en œuvre de solutions opérationnelles": 3,
+        "Analyse de la performance et amélioration continue": 2,
+        "Animation, formation et accompagnement des acteurs": 5,
+        "Coordination territoriale et concertation": 4,
+        "Veille, innovation et prospective": 2
+      },
+      "T": {
+        "_libelle": "T – Immobilier, nettoyage, services aux entreprises",
+        "Diagnostic systémique du système alimentaire": 2,
+        "Conception de stratégies de transition alimentaire": 2,
+        "Pilotage de projets de transition alimentaire": 3,
+        "Mise en œuvre de solutions opérationnelles": 3,
+        "Analyse de la performance et amélioration continue": 3,
+        "Animation, formation et accompagnement des acteurs": 2,
+        "Coordination territoriale et concertation": 2,
+        "Veille, innovation et prospective": 2
+      },
+      "U": {
+        "_libelle": "U – Sciences, recherche",
+        "Diagnostic systémique du système alimentaire": 4,
+        "Conception de stratégies de transition alimentaire": 4,
+        "Pilotage de projets de transition alimentaire": 3,
+        "Mise en œuvre de solutions opérationnelles": 3,
+        "Analyse de la performance et amélioration continue": 5,
+        "Animation, formation et accompagnement des acteurs": 2,
+        "Coordination territoriale et concertation": 2,
+        "Veille, innovation et prospective": 5
+      },
+      "V": {
+        "_libelle": "V – Accompagnement social, humanitaire",
+        "Diagnostic systémique du système alimentaire": 3,
+        "Conception de stratégies de transition alimentaire": 3,
+        "Pilotage de projets de transition alimentaire": 4,
+        "Mise en œuvre de solutions opérationnelles": 2,
+        "Analyse de la performance et amélioration continue": 3,
+        "Animation, formation et accompagnement des acteurs": 5,
+        "Coordination territoriale et concertation": 5,
+        "Veille, innovation et prospective": 3
+      }
+    }
+  },
+  "T3_contraintes_x_blocs": {
+    "_description": "Pondération des blocs selon les contraintes pratiques déclarées. Score -5 (forte pénalité) à +5 (fort bonus). Les contraintes ne sont PAS éliminatoires — elles pondèrent.",
+    "_colonnes": [
+      "Production agricole",
+      "Transformation agroalimentaire & industries",
+      "Logistique, distribution & circuits courts",
+      "Restauration & métiers de bouche",
+      "Nutrition, santé & consommation",
+      "Économie circulaire & environnement",
+      "Gouvernance, politiques publiques & transition",
+      "Transversale"
+    ],
+    "scores": {
+      "Mobilité géographique (prêt à déménager)": {
+        "Production agricole": 3,
+        "Transformation agroalimentaire & industries": 2,
+        "Logistique, distribution & circuits courts": 3,
+        "Restauration & métiers de bouche": 1,
+        "Nutrition, santé & consommation": 1,
+        "Économie circulaire & environnement": 3,
+        "Gouvernance, politiques publiques & transition": 2,
+        "Transversale": 2
+      },
+      "Disponibilité fréquence/semaine - temps plein": {
+        "Production agricole": 3,
+        "Transformation agroalimentaire & industries": 3,
+        "Logistique, distribution & circuits courts": 3,
+        "Restauration & métiers de bouche": 3,
+        "Nutrition, santé & consommation": 2,
+        "Économie circulaire & environnement": 3,
+        "Gouvernance, politiques publiques & transition": 3,
+        "Transversale": 3
+      },
+      "Disponibilité fréquence/semaine - temps partiel": {
+        "Production agricole": -2,
+        "Transformation agroalimentaire & industries": -1,
+        "Logistique, distribution & circuits courts": -1,
+        "Restauration & métiers de bouche": 1,
+        "Nutrition, santé & consommation": 2,
+        "Économie circulaire & environnement": -1,
+        "Gouvernance, politiques publiques & transition": 1,
+        "Transversale": 1
+      },
+      "Disponibilité fréquence/semaine - qq heures": {
+        "Production agricole": -4,
+        "Transformation agroalimentaire & industries": -3,
+        "Logistique, distribution & circuits courts": -3,
+        "Restauration & métiers de bouche": -2,
+        "Nutrition, santé & consommation": 0,
+        "Économie circulaire & environnement": -2,
+        "Gouvernance, politiques publiques & transition": -1,
+        "Transversale": 0
+      },
+      "Disponibilité durée totale - peu": {
+        "Production agricole": 0,
+        "Transformation agroalimentaire & industries": 1,
+        "Logistique, distribution & circuits courts": 2,
+        "Restauration & métiers de bouche": 2,
+        "Nutrition, santé & consommation": 1,
+        "Économie circulaire & environnement": 1,
+        "Gouvernance, politiques publiques & transition": 0,
+        "Transversale": 1
+      },
+      "Disponibilité durée totale - moyenne": {
+        "Production agricole": 1,
+        "Transformation agroalimentaire & industries": 2,
+        "Logistique, distribution & circuits courts": 2,
+        "Restauration & métiers de bouche": 2,
+        "Nutrition, santé & consommation": 2,
+        "Économie circulaire & environnement": 2,
+        "Gouvernance, politiques publiques & transition": 2,
+        "Transversale": 2
+      },
+      "Disponibilité durée totale - plus": {
+        "Production agricole": 3,
+        "Transformation agroalimentaire & industries": 3,
+        "Logistique, distribution & circuits courts": 2,
+        "Restauration & métiers de bouche": 2,
+        "Nutrition, santé & consommation": 3,
+        "Économie circulaire & environnement": 3,
+        "Gouvernance, politiques publiques & transition": 4,
+        "Transversale": 3
+      },
+      "Travail en extérieur (conditions climatiques)": {
+        "Production agricole": 5,
+        "Transformation agroalimentaire & industries": 1,
+        "Logistique, distribution & circuits courts": 2,
+        "Restauration & métiers de bouche": 1,
+        "Nutrition, santé & consommation": 0,
+        "Économie circulaire & environnement": 3,
+        "Gouvernance, politiques publiques & transition": 0,
+        "Transversale": 1
+      },
+      "Travail physique / port de charges": {
+        "Production agricole": 4,
+        "Transformation agroalimentaire & industries": 3,
+        "Logistique, distribution & circuits courts": 3,
+        "Restauration & métiers de bouche": 2,
+        "Nutrition, santé & consommation": 0,
+        "Économie circulaire & environnement": 2,
+        "Gouvernance, politiques publiques & transition": 0,
+        "Transversale": 1
+      },
+      "Travail en horaires décalés / week-end": {
+        "Production agricole": 3,
+        "Transformation agroalimentaire & industries": 3,
+        "Logistique, distribution & circuits courts": 3,
+        "Restauration & métiers de bouche": 4,
+        "Nutrition, santé & consommation": 1,
+        "Économie circulaire & environnement": 2,
+        "Gouvernance, politiques publiques & transition": 1,
+        "Transversale": 1
+      },
+      "Niveau de qualification Bac ou moins": {
+        "Production agricole": 2,
+        "Transformation agroalimentaire & industries": 2,
+        "Logistique, distribution & circuits courts": 1,
+        "Restauration & métiers de bouche": 3,
+        "Nutrition, santé & consommation": -2,
+        "Économie circulaire & environnement": 1,
+        "Gouvernance, politiques publiques & transition": -3,
+        "Transversale": -1
+      },
+      "Niveau de qualification Bac+2 à Bac+3": {
+        "Production agricole": 1,
+        "Transformation agroalimentaire & industries": 2,
+        "Logistique, distribution & circuits courts": 2,
+        "Restauration & métiers de bouche": 2,
+        "Nutrition, santé & consommation": 1,
+        "Économie circulaire & environnement": 2,
+        "Gouvernance, politiques publiques & transition": 1,
+        "Transversale": 1
+      },
+      "Niveau de qualification Bac+5 et plus": {
+        "Production agricole": -1,
+        "Transformation agroalimentaire & industries": 0,
+        "Logistique, distribution & circuits courts": 0,
+        "Restauration & métiers de bouche": -1,
+        "Nutrition, santé & consommation": 3,
+        "Économie circulaire & environnement": 1,
+        "Gouvernance, politiques publiques & transition": 4,
+        "Transversale": 3
+      },
+      "Budget formation limité (< 2 000€)": {
+        "Production agricole": -2,
+        "Transformation agroalimentaire & industries": -3,
+        "Logistique, distribution & circuits courts": -2,
+        "Restauration & métiers de bouche": -1,
+        "Nutrition, santé & consommation": -3,
+        "Économie circulaire & environnement": -2,
+        "Gouvernance, politiques publiques & transition": -4,
+        "Transversale": -3
+      },
+      "Budget formation moyen (2 000€ à 5 000€)": {
+        "Production agricole": 0,
+        "Transformation agroalimentaire & industries": 0,
+        "Logistique, distribution & circuits courts": 0,
+        "Restauration & métiers de bouche": 1,
+        "Nutrition, santé & consommation": 0,
+        "Économie circulaire & environnement": 0,
+        "Gouvernance, politiques publiques & transition": -1,
+        "Transversale": 0
+      },
+      "Budget formation élevé (> 5 000€)": {
+        "Production agricole": 1,
+        "Transformation agroalimentaire & industries": 2,
+        "Logistique, distribution & circuits courts": 1,
+        "Restauration & métiers de bouche": 1,
+        "Nutrition, santé & consommation": 3,
+        "Économie circulaire & environnement": 2,
+        "Gouvernance, politiques publiques & transition": 4,
+        "Transversale": 3
+      },
+      "Appétence numérique / outils digitaux": {
+        "Production agricole": 2,
+        "Transformation agroalimentaire & industries": 2,
+        "Logistique, distribution & circuits courts": 3,
+        "Restauration & métiers de bouche": 1,
+        "Nutrition, santé & consommation": 3,
+        "Économie circulaire & environnement": 3,
+        "Gouvernance, politiques publiques & transition": 3,
+        "Transversale": 4
+      },
+      "Sensibilité écologique forte": {
+        "Production agricole": 5,
+        "Transformation agroalimentaire & industries": 3,
+        "Logistique, distribution & circuits courts": 3,
+        "Restauration & métiers de bouche": 3,
+        "Nutrition, santé & consommation": 4,
+        "Économie circulaire & environnement": 5,
+        "Gouvernance, politiques publiques & transition": 4,
+        "Transversale": 4
+      },
+      "Goût du contact client / public": {
+        "Production agricole": 1,
+        "Transformation agroalimentaire & industries": 1,
+        "Logistique, distribution & circuits courts": 3,
+        "Restauration & métiers de bouche": 5,
+        "Nutrition, santé & consommation": 4,
+        "Économie circulaire & environnement": 2,
+        "Gouvernance, politiques publiques & transition": 3,
+        "Transversale": 3
+      },
+      "Autonomie / goût d'entreprendre": {
+        "Production agricole": 5,
+        "Transformation agroalimentaire & industries": 4,
+        "Logistique, distribution & circuits courts": 3,
+        "Restauration & métiers de bouche": 4,
+        "Nutrition, santé & consommation": 3,
+        "Économie circulaire & environnement": 4,
+        "Gouvernance, politiques publiques & transition": 3,
+        "Transversale": 3
+      },
+      "Sens de la pédagogie / goût transmission": {
+        "Production agricole": 1,
+        "Transformation agroalimentaire & industries": 1,
+        "Logistique, distribution & circuits courts": 1,
+        "Restauration & métiers de bouche": 2,
+        "Nutrition, santé & consommation": 3,
+        "Économie circulaire & environnement": 2,
+        "Gouvernance, politiques publiques & transition": 3,
+        "Transversale": 4
+      },
+      "Goût du travail en équipe / esprit collectif": {
+        "Production agricole": 1,
+        "Transformation agroalimentaire & industries": 2,
+        "Logistique, distribution & circuits courts": 3,
+        "Restauration & métiers de bouche": 4,
+        "Nutrition, santé & consommation": 3,
+        "Économie circulaire & environnement": 2,
+        "Gouvernance, politiques publiques & transition": 3,
+        "Transversale": 3
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "oya-diagnostic",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build:domains": "node scripts/build-domains.js"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  },
+  "dependencies": {
+    "fuse.js": "^7.0.0",
+    "jspdf": "^2.5.1"
+  }
+}

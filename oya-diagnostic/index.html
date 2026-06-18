@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OYA Match — Diagnostic d'orientation alimentaire</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Header global -->
+    <header class="app-header">
+      <div class="header-inner">
+        <img src="./logo_oya_blanc.svg" alt="OYA" class="logo-img" />
+        <div class="progress-wrap">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <span class="progress-label" id="progressLabel"></span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Screens (un seul visible à la fois) -->
+    <main id="screenSwipe"   class="screen screen-active"></main>
+    <main id="screenProfile" class="screen"></main>
+    <main id="screenResults" class="screen"></main>
+  </div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
