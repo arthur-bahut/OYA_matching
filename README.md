@@ -2,17 +2,18 @@
 
 > Diagnostic d'orientation vers les métiers de la transition alimentaire, basé sur un système de swipe de 20 affirmations.
 
-**Demo :** <!-- TODO: URL de démo -->
+**URL de démo :** https://oyamatching.netlify.app/
+L'appli est pensée mobile-first. Bien qu'utilisable en suivant le lien de démo, l'idéal est de télécharger le projet en local et suivre les instructions du README.
 
 ---
 
 ## Présentation
 
-OYA Matching est une application web mobile-first, inspiré des applications de rencontre, qui aide les personnes en reconversion à identifier les domaines et métiers de la transition alimentaire qui leur correspondent le mieux.
+OYA Matching est une application web mobile-first, inspirée des applications de rencontre, qui aide les personnes en reconversion à identifier les domaines et métiers de la transition alimentaire qui leur correspondent le mieux.
 
 **Fonctionnement en 3 étapes :**
 
-1. **Swipe** — 20 affirmations à évaluer (oui / non / c'est tout à fait moi / pas sûr·e)
+1. **Swipe** — 20 affirmations à évaluer (oui / non / c'est tout à fait moi / pas sûr·e) — fonction swipe + boutons cliquables
 2. **Profil** — Informations complémentaires : métier actuel, expérience, disponibilités, atouts personnels
 3. **Résultats** — Top 3 des domaines qui matchent, liste de métiers associés, synthèse personnalisée et export PDF
 
@@ -38,14 +39,14 @@ npm install
 npm run dev
 ```
 
-Accessible sur `http://localhost:5173`.
+Accessible sur `http://localhost:5173` (ou tout autre port affiché dans le terminal de commande si 5173 est occupé).
 
 Pour tester sur mobile (même réseau local) :
 
 ```bash
 npm run dev -- --host
 ```
-
+Ensuite, ouvrir le navigateur de son téléphone et renseigner l'une des URL proposées dans le terminal de commande (ex : http://192.168.1.31:5173)
 ---
 
 ## Structure du projet
@@ -90,7 +91,7 @@ Sans ces variables, l'app fonctionne normalement — la collecte Airtable est si
 
 ## Domaines couverts
 
-L'outil couvre 7 domaines de la transition alimentaire :
+L'outil couvre 8 domaines de la transition alimentaire :
 
 - Production agricole
 - Transformation agroalimentaire & industries
