@@ -67,7 +67,7 @@ function showDisclaimer(container) {
     <div class="disclaimer-body">
       <p>Cet outil propose <strong style="color: #EF8D11;">20 affirmations</strong> liées au domaine de la transition alimentaire et les métiers qui lui sont associés.</p>
       <p>Pour chacune d'elle, <strong style="color: #EF8D11;">indiquez si elle vous correspond ou non</strong> — il n'y a pas de bonne ou de mauvaise réponse.</p>
-      <p>À la fin, vous obtiendrez une recommandation personnalisée pour vous orienter vers les métiers de la transition alimentaire qui vous correspondent le mieux.</p>
+      <p>À la fin, vous obtiendrez une <strong style="color: #EF8D11;">recommandation personnalisée</strong> pour vous orienter vers les métiers de la transition alimentaire qui vous correspondent le mieux.</p>
     </div>
     <button class="btn-primary btn-disclaimer-start" id="btnStart" style="width:fit-content">Commencer →</button>
     <div class="disclaimer-footer">
