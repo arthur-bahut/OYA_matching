@@ -35,6 +35,8 @@ Aucune IAG présente dans l'application.
 
 ## Installation
 
+Ouvrir un terminal de commande (cmd, Powershell ou autre) et taper :
+
 ```bash
 git clone https://github.com/arthur-bahut/OYA_matching.git
 cd OYA_matching/oya-diagnostic
@@ -42,14 +44,17 @@ npm install
 npm run dev
 ```
 
-Accessible sur `http://localhost:5173` (ou tout autre port affiché dans le terminal de commande si 5173 est occupé).
+Ensuite, l'appli sera accessible sur `http://localhost:5173` (ou tout autre port affiché dans le terminal si 5173 est occupé).
 
-Pour tester sur mobile (même réseau local) :
+Pour tester sur mobile (**C'EST L'IDEAL ;)** ) :
 
 ```bash
 npm run dev -- --host
 ```
-Ensuite, ouvrir le navigateur de son téléphone et renseigner l'une des URL proposées dans le terminal de commande (ex : http://192.168.1.31:5173)
+
+Ensuite, ouvrir le navigateur de son téléphone et renseigner l'une des URL proposées dans le terminal (ex : http://192.168.1.31:5173).
+Attention : il faut que votre PC et votre téléphone soient sur le même réseau WiFi.
+
 ---
 
 ## Structure du projet
