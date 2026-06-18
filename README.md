@@ -36,7 +36,8 @@ Aucune IAG présente dans l'application.
 ## Installation
 
 ```bash
-cd oya-diagnostic
+git clone https://github.com/arthur-bahut/OYA_matching.git
+cd OYA_matching/oya-diagnostic
 npm install
 npm run dev
 ```
