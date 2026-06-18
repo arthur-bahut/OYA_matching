@@ -3,7 +3,8 @@
 > Diagnostic d'orientation vers les métiers de la transition alimentaire, basé sur un système de swipe de 20 affirmations.
 
 **URL de démo :** https://oyamatching.netlify.app/
-L'appli est pensée mobile-first. Bien qu'utilisable en suivant le lien de démo, l'idéal est de télécharger le projet en local et suivre les instructions du README.
+
+**L'appli est pensée mobile-first. L'idéal est donc de la tester sur votre téléphone !**
 
 ---
 
